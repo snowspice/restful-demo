@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"net/http"
 	_ "github.com/go-sql-driver/mysql"
-	"com.mydadao.com/restful-demo/common"
+	"github.com/snowspice/restful-demo/common"
 
-	"com.mydadao.com/restful-demo/controller"
+	"github.com/snowspice/restful-demo/controller"
 
 )
 

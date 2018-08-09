@@ -10,6 +10,7 @@ out
 .classpath
 .project
 .settings/
+
  
 bin/
 gen/
@@ -17,7 +18,8 @@ local.properties
  
 .DS_Store
 Thumbs.db
- 
+
+*.log
 *.bak
 *.tem
 *.temp

@@ -1,7 +1,7 @@
 package entity
 
 import (
-	"com.mydadao.com/restful-demo/common"
+	"github.com/snowspice/restful-demo/common"
 )
 
 type User struct {
