@@ -48,6 +48,26 @@
     2. 浏览器访问：http://localhost:8080/user/1   ：确定服务可用
 
 
+## go 包管理工具
+
+### govendor [本项目采用govendor管理]
+    https://blog.csdn.net/huwh_/article/details/77169858
+    https://www.cnblogs.com/hadex/p/6656567.html
+
+### glide
+    https://studygolang.com/articles/7129
+
+## 自动生成模型代码 【xorm】
+    https://github.com/go-xorm/cmd
+    查看帮助信息： xorm help reverse
+    示例：【项目根目录下执行一下命令，会在改目录的models下生成文件】
+     xorm reverse mysql root:123456@(localhost:3306)/test?charset=utf8  C:/GO_PATH/src/github.com/go-xorm/cmd/xorm/templates/goxorm
+
+
+
+
+
+
 
 
 
