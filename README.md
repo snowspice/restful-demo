@@ -63,7 +63,9 @@
     示例：【项目根目录下执行一下命令，会在改目录的models下生成文件】
      xorm reverse mysql root:123456@(localhost:3306)/test?charset=utf8  C:/GO_PATH/src/github.com/go-xorm/cmd/xorm/templates/goxorm
 
-
+## log4go 使用方式
+    common.GetLogger().Debug("-----我的测试----")
+    需要使用的地方都采用common.GetLogger()
 
 
 
