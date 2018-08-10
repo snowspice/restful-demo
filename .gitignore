@@ -11,6 +11,7 @@ out
 .project
 .settings/
 
+models/
 vendor/
 bin/
 gen/

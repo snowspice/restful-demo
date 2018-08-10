@@ -51,7 +51,9 @@ func main() {
 
 	registerRouter(router)
 
-	common.Debug("--------------log  debug----------")
+	common.Debug("-------first-------log  debug----------")
+	common.GetLogger().Debug("-----我的测试----")
+
 	fmt.Println(" [ log debug] is ok")
 	err := http.ListenAndServe(cfg.App["addr"]+":"+cfg.App["port"], router)
 	if err != nil {
