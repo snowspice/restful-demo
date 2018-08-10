@@ -4,12 +4,12 @@ import "math"
 
 //分页对象
 type Pager struct {
-	Page      int64    `form:"page"  json:"page"`//当前页
-	PageSize  int64    `form:"pageSize"  json:"pageSize"`//每页条数
-	Total     int64    `form:"total"  json:"total"`//总条数
-	PageCount int64    `form:"pageCount"  json:"pageCount"`//总页数
-	Nums      []int64  `form:"nums"  json:"nums"`//分页序数
-	NumsCount int64    `form:"numsCount"  json:"numsCount"`//总页序数
+	Page      int64   `form:"page"  json:"page"`           //当前页
+	PageSize  int64   `form:"pageSize"  json:"pageSize"`   //每页条数
+	Total     int64   `form:"total"  json:"total"`         //总条数
+	PageCount int64   `form:"pageCount"  json:"pageCount"` //总页数
+	Nums      []int64 `form:"nums"  json:"nums"`           //分页序数
+	NumsCount int64   `form:"numsCount"  json:"numsCount"` //总页序数
 }
 
 func CreatePager(page, pagesize, total int64) *Pager {
@@ -31,7 +31,6 @@ func CreatePager(page, pagesize, total int64) *Pager {
 	pager.setNums()
 	return pager
 }
-
 
 func (this *Pager) setNums() {
 	this.Nums = []int64{}
@@ -58,5 +57,3 @@ func (this *Pager) setNums() {
 		this.Nums = append(this.Nums, i)
 	}
 }
-
-

@@ -30,6 +30,30 @@
     在Goland 的Terminal 执行
      curl -X POST http://127.0.0.1:8080/user/findOne -H "Content-Type:application/x-www-form-urlencoded" -d "userId=1"
 
+### 生成docker 镜像 [由于go环境镜像使用 ：golang:latest ，当前国内网络受限，请翻墙后创建镜像]
+    docker build -t restfuldemo_v1.0 .
+    创建成功后，会出现：
+    Successfully built d5a46802017f
+    Successfully tagged restfuldemo_v1.0:latest
+    SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have '-rwxr-xr-x' permissions. It is rec
+    ommended to double check and reset permissions for sensitive files and directories.
+
+### 运行docker镜像
+    docker run --name restfuldemo_v1.0 -p 8080:8080 -d restfuldemo_v1.0
+    docker 指令说明：docker --help 查看
+    doceker ps|docker images|docker stop|
+
+### 访问启动的镜像服务
+    1.查看镜像日志：docker logs -f restfuldemo_v1.0  ：确定服务启动
+    2. 浏览器访问：http://localhost:8080/user/1   ：确定服务可用
+
+
+
+
+
+
+
+
 
 
 

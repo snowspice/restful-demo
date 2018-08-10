@@ -11,7 +11,7 @@ out
 .project
 .settings/
 
- 
+vendor/
 bin/
 gen/
 local.properties

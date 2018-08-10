@@ -1,19 +1,19 @@
 package common
 
 import (
-	"os"
-	"fmt"
 	"bufio"
+	"fmt"
 	"io"
-	"strings"
+	"os"
 	"strconv"
+	"strings"
 )
 
 type Config struct {
-	App         map[string]string
-	Datasource  map[string](map[string]string)
-	Logger      map[string]string
-	All         map[string]string
+	App        map[string]string
+	Datasource map[string](map[string]string)
+	Logger     map[string]string
+	All        map[string]string
 }
 
 func (cfg *Config) Parse(fpath string) {
@@ -71,7 +71,6 @@ func (cfg *Config) Parse(fpath string) {
 
 		}
 	}
-
 
 }
 

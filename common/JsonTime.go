@@ -4,15 +4,14 @@ import (
 	"time"
 )
 
-
 type JsonDateTime time.Time
 type JsonDate time.Time
 type JsonTime time.Time
 
 const (
 	dateTimeFormart = "2006-01-02 15:04:05"
-	dateFormart = "2006-01-02"
-	timeFormart = "15:04:05"
+	dateFormart     = "2006-01-02"
+	timeFormart     = "15:04:05"
 )
 
 func (p *JsonDateTime) UnmarshalJSON(data []byte) (err error) {
